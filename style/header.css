@@ -80,3 +80,22 @@ span {
   grid-row: 1 / 2;
   place-self: end;
 }
+
+.header__icons { 
+  display: flex;
+  gap: 20px;
+}
+
+.header__icons-img {
+  width: 36px;
+  height: 36px;
+}
+
+.header__icons-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+
+
+}
+
