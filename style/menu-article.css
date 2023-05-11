@@ -1,0 +1,13 @@
+.menu {
+  padding: 17px 0 20px 20px;
+}
+
+.menu__item {
+  font-size: 16px;
+  color: var(--gray-color);
+}
+
+.menu__link {
+  text-decoration: none;
+  color: var(--gray-color);
+  }

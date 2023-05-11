@@ -1,0 +1,33 @@
+.article {
+  max-width: 1920px;
+  padding: 100px 70px 70px 75px;
+}
+
+.article__head-title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.article__text:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.article__title {
+  font-weight: 700;
+}
+
+.article__subtitle {
+  font-weight: 400;
+}
+
+.section:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.wrapper {
+  max-width:1100px;
+}
+
+.article__img {
+  padding: 25px 0 50px;
+}
