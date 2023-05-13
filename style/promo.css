@@ -1,8 +1,9 @@
 .promo__list {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 480px repeat(5, 245px);
+  grid-template-rows: 480px repeat(4, 245px);
   gap: 60px;
+  margin-bottom: 189px;
 }
 
 .promo__img {
@@ -12,10 +13,24 @@
   border-radius: 20px;
 }
 
-.promo__item-banner {
+.promo__item-banner { 
   grid-column: 1/7;
   grid-row: 1/2;
 }
+
+li {
+  position: relative;
+}
+
+.promo__banner-text {
+  position: absolute;
+  top: 152px;
+  left: 110px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 91px;
+  color: var(--white-color);
+} 
 
 .promo__item-second-pair {
   grid-column: 3/5;
@@ -45,8 +60,4 @@
 .promo__item-dress {
   grid-column: 5/6;
   grid-row: 4/6;
-}
-
-.promo__item-clean {
-  
 }
