@@ -4,7 +4,7 @@
 
 .header__grid {
   display: grid;
-  grid-template-columns: 293px 230px 757px 431px;
+  grid-template-columns: minmax(190px, 293px) minmax(151px, 230px) minmax(700px, 757px) minmax(350px, 431px) ;
   grid-template-rows: 61px;
   place-items: center start;
   gap: 20px;
