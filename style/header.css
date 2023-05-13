@@ -64,8 +64,6 @@ span {
 
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-
-
 }
 
 .header__search-btn {
@@ -82,21 +80,20 @@ span {
 }
 
 .header__icons { 
+  place-self: start end;
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  gap: 70px;
 }
 
 .header__icons-img {
   width: 36px;
   height: 36px;
+  margin: 0 auto 6px;
 }
 
 .header__icons-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-
-
 }
 
