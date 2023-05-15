@@ -120,3 +120,28 @@ left: 20px;
   line-height: 39px;
   color: var(--white-color);
 }
+
+.clock__text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  color: var(--white-color);
+}
+
+.clock__title {
+  position: absolute;
+  top: 78px;
+  left: calc(50% - 103px);
+}
+
+.clock__discount {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: var(--yellow-color);
+  position: absolute;
+  top: 137px;
+  right: 20px;
+  text-align: center;
+  padding-top: 24px;
+}
