@@ -101,3 +101,22 @@ li {
   line-height: 42px;
   color: var(--white-color);
 }
+
+.book__text {
+position: absolute;
+top: 97px;
+left: 20px;
+}
+
+.book__text-top {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--white-color);
+}
+
+.book__text-bottom {
+  font-size: 30px;
+  line-height: 39px;
+  color: var(--white-color);
+}
