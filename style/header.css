@@ -97,3 +97,43 @@ span {
   line-height: 21px;
 }
 
+.timer__title {
+  position: absolute;
+  left: calc(50% - 62px);
+  top: 339px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--white-color);
+
+}
+
+.timer__wrapper {
+  display: flex;
+  position: absolute;
+  left: calc(50% - 236.5px);
+  top: 368px;
+  gap: 30px;
+}
+
+.timer__value {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.timer__number {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: var(--white-color);
+}
+
+.timer__text {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--white-color);
+  
+}
