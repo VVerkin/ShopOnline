@@ -234,6 +234,15 @@
     grid-area: clean;
   }
 
+  .clean__text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    gap: 39px;
+  }
+
   .clean__title {
     font-weight: 700;
     font-size: 30px;
