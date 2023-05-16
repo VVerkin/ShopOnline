@@ -111,15 +111,21 @@
   }
   
   .clock__discount {
+    position: absolute;
+    top: 137px;
+    right: 20px;
+  }
+
+  .circle {
     width: 88px;
     height: 88px;
     border-radius: 50%;
     background-color: var(--yellow-color);
-    position: absolute;
-    top: 137px;
-    right: 20px;
     text-align: center;
     padding-top: 24px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
   }
 
   .promo__second-pair {
@@ -128,13 +134,12 @@
 
   .second-pair__text {
     position: absolute;
-    width: minmax(414px, 510px);
+    max-width: 510px;
     height: 178px;
-    padding: 26px 23px;
     top: 350px;
     left: 20px;
-  
-    background: #38C0EB;
+    padding: 26px 60px 26px 23px;
+    background: var(--light-blue-color);
     border-radius: 20px;
   }
   
@@ -142,7 +147,7 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 48px;
-    
+    margin-bottom: 6px;
   }
     
   .second-pair__text-bottom {
@@ -155,24 +160,84 @@
     grid-area: gifts;
   }
 
+  .gifts__text {
+    position: absolute;
+    top: 104px;
+    left: 30px;
+    white-space: pre-line;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
   .promo__sneakers {
     grid-area: sneakers;
+  }
+
+  .sneakers__discount {
+    position: absolute;
+    top: 20px;
+    left: 20px;
   }
 
   .promo__laptop {
     grid-area: laptop;
   }
 
+  .laptop__text {
+    display: flex;
+    position: absolute;
+    left: 30px;
+    top: 140px;
+    gap: 39px;
+  }
+
+  .laptop__title {
+    padding-top: 25px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    }
+
   .promo__new-year {
     grid-area: new-year;
+  }
+
+  .new-year__text {
+    width: 643px;
+    height: 115;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 32px 41px;
+    position: absolute;
+    left: 50px;
+    top: 385px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+
+    color: var(--red-color);
   }
 
   .promo__dress {
     grid-area: dress;
   }
 
+  .dress__discount {
+    position: absolute;
+    left: 137px;
+    top: 442px;
+  }
+
   .promo__clean {
     grid-area: clean;
+  }
+
+  .clean__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
   }
 
   .promo__balls {
