@@ -96,3 +96,10 @@ span {
   font-size: 16px;
   line-height: 21px;
 }
+
+@media (max-width: 1820px) {
+
+  .header__icons { 
+    gap: 60px;
+  }
+}

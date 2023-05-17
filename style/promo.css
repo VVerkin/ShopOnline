@@ -138,7 +138,8 @@
     height: 178px;
     top: 350px;
     left: 20px;
-    padding: 26px 60px 26px 23px;
+    right: 20px;
+    padding: 26px 0px 26px 23px;
     background: var(--light-blue-color);
     border-radius: 20px;
   }
@@ -253,3 +254,35 @@
   .promo__balls {
     grid-area: balls;
   }
+
+/* @media (max-width: 1819px) {
+  .second-pair__text {
+    padding-right: 70px;
+  }
+  
+  .second-pair__text-top {
+    font-size: 38px;
+    line-height: 46px;
+  }
+    
+  .second-pair__text-bottom {
+    font-size: 54px;
+    line-height: 65px;
+  }
+}
+
+@media (max-width: 1750px) {
+  .second-pair__text {
+    padding-right: 58px;
+  }
+  
+  .second-pair__text-top {
+    margin-bottom: 0;
+    line-height: 40px;
+  }
+    
+  .second-pair__text-bottom {
+    line-height: 60px;
+  }
+} */
+
