@@ -345,11 +345,44 @@
 @media (max-width: 1280px) {
 
   .promo__list {
-    gap: 36px;
+    gap: 30px;
   }
+
+  .book__text-top {
+    font-size: 33px;
+    line-height: 40px;
+  }
+  
+  .book__text-bottom {
+    font-size: 25px;
+    line-height: 31px;
+  }
+
+  .second-pair__text-top {
+    font-size: 34px;
+    line-height: 36px;
+    margin-bottom: 4px;
+  }
+    
+  .second-pair__text-bottom {
+    font-size: 42px;
+    line-height: 44px;
+  }
+
+  .gifts__text {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .new-year__text {
+    max-width: 643px;
+    font-size: 33px;
+    line-height: 48px;
+}
 }
 
 @media (max-width: 1024px) {
+
   .promo__list {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 314px repeat(4, 217px) 418px;
@@ -362,7 +395,6 @@
     "gifts gifts dress clean"
     "laptop laptop dress balls"
     "new-year new-year new-year new-year";
-
   }
 
   .promo__img {
@@ -484,7 +516,6 @@
   .dress__discount {
     top: 358px;
     right: 10px;
-
   }
 
   .clean__text {
@@ -509,5 +540,4 @@
     font-size: 30px;
     line-height: 36px;
   }
-  
 }
