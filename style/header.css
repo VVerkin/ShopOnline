@@ -105,6 +105,10 @@ span {
 
 @media (max-width: 1024px) {
 
+  .header {
+    padding: 34px 0 60px 0;
+  }
+
   .header__grid {
     grid-template-columns: minmax(165px, 190px) minmax(254px, 376px) minmax(221px, 294px);
     grid-template-rows: 61px 54px;
