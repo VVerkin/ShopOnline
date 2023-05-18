@@ -36,6 +36,13 @@ body {
     /* position: relative; */
   }
 
+  @media (max-width: 1024px) {
+
+    .container {
+    padding: 0 42px;
+  }
+}
+
 img, svg {
   max-width: 100%; 
   height: auto; 

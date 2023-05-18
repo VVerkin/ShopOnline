@@ -103,6 +103,14 @@ span {
   }
 }
 
+@media (max-width: 1520px) {
+  .header__grid {
+    grid-template-columns: minmax(190px, 293px) minmax(151px, 230px) minmax(500px, 757px) minmax(350px, 431px) ;
+    gap: 10px;
+  }
+
+}
+
 @media (max-width: 1024px) {
 
   .header {
@@ -110,7 +118,7 @@ span {
   }
 
   .header__grid {
-    grid-template-columns: minmax(165px, 190px) minmax(254px, 376px) minmax(221px, 294px);
+    grid-template-columns: minmax(165px, 190px) minmax(204px, 376px) minmax(221px, 294px);
     grid-template-rows: 61px 54px;
     place-items: center start;
     gap: 35px 39px;
