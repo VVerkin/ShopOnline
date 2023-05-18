@@ -47,7 +47,6 @@ span {
 .header__search {
   display: grid;
   width: 100%;
-
 }
 
 .header__search-input {
@@ -101,5 +100,33 @@ span {
 
   .header__icons { 
     gap: 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .header__grid {
+    grid-template-columns: minmax(165px, 190px) minmax(254px, 376px) minmax(221px, 294px);
+    grid-template-rows: 61px 54px;
+    place-items: center start;
+    gap: 35px 39px;
+  }
+
+  .header__menu-btn {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .header__search {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    max-width: 700px;
+    place-self: end;
+  }
+
+  .header__icons { 
+    grid-column: 3/4;
+    grid-row: 1/2;
+    gap: 40px;
   }
 }
