@@ -43,6 +43,13 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+
+  .container {
+  padding: 0 34px;
+}
+}
+
 img, svg {
   max-width: 100%; 
   height: auto; 
