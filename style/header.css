@@ -163,12 +163,13 @@ span {
   }
 
   .header__grid {
-    grid-template-columns: minmax(114px, 165px) minmax(100px, 254px) minmax(130px, 250px);
+    grid-template-columns: minmax(114px, 130px) minmax(100px, 284px) minmax(130px, 250px);
     grid-template-rows: 56px 42px;
     gap: 29px;
   }
 
   .header__logo {
+    grid-column: 1/3;
     font-size: 26px;
     line-height: 35px;
   }
@@ -192,7 +193,7 @@ span {
   }
 
   .header__search {
-    grid-column: 1/4;
+    grid-column: 2/4;
     place-self: end;
   }
 
