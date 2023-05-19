@@ -237,21 +237,20 @@
     grid-area: clean;
   }
 
-  .clean__text {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    gap: 39px;
-  }
-
   .clean__title {
+    position: absolute;
+    top: 147px;
+    left: 20px;
     font-weight: 700;
     font-size: 30px;
     line-height: 39px;
   }
 
+  .clean__discount {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
   .promo__balls {
     grid-area: balls;
   }
@@ -337,6 +336,21 @@
     .clean__title {
     font-size: 26px;
     line-height: 34px;
+    padding-right: 10px;
+    }
+}
+
+@media (max-width: 1480px) {
+  .laptop__title {
+    max-width: 200px;
+    top: 148px;
+    }
+}
+
+@media (max-width: 1374px) {
+    .clean__title {
+      font-size: 24px;
+      line-height: 26px;
     }
 }
 
@@ -499,10 +513,16 @@
   }
 
   .laptop__title {
+    max-width: 300px;
     left: 20px;
     top: 158px;
     font-size: 30px;
     line-height: 39px;
+    }
+
+    .laptop__discount {
+      right: 10px;
+      bottom: 10px;
     }
 
   .dress__discount {
@@ -510,15 +530,16 @@
     right: 10px;
   }
 
-  .clean__text {
-    left: 10px;
-    top: 8px;
-    gap: 79px;
-  }
-
   .clean__title {
+    left: 14px;
+    top: 177px;
     font-size: 20px;
     line-height: 26px;
+  }
+
+  .clean__discount {
+    left: 10px;
+    top: 10px;
   }
 
   .new-year__text {
@@ -531,6 +552,28 @@
     top: 296px;
     font-size: 30px;
     line-height: 36px;
+  }
+}
+
+@media (max-width: 988px) {
+  .clean__title {
+    top: 160px;
+  }
+}
+
+@media (max-width: 931px) {
+  .book__text {
+    top: 110px;
+    left: 9px;
+  }
+
+  .second-pair__text {
+    padding: 14px 25px;
+  }
+
+  .laptop__title {
+    top: 130px;
+    max-width: 200px;
   }
 }
 
@@ -559,6 +602,10 @@
     font-size: 30px;
     line-height: 39px;
   } 
+
+  .promo__img {
+    border-radius: 12px;
+  }
 
   .timer__title {
     left: calc(50% - 46.5px);
@@ -633,7 +680,7 @@
     top: 309px;
     left: 10px;
     right: 10px;
-    padding: 16px 28px;
+    padding: 16px 0 16px 28px;
     border-radius: 12px;
   }
   
@@ -677,13 +724,14 @@
     right: 10px;
   }
 
-  .clean__text {
+  .clean__discount {
     left: 10px;
     top: 10px;
-    gap: 29px;
   }
 
   .clean__title {
+    top: 88px;
+    left: 14px;
     font-size: 16px;
     line-height: 19px;
   }
