@@ -887,6 +887,30 @@
     left: 10px;
 }
 
+.timer__title {
+  top: 268px;
+}
+
+.timer__wrapper {
+  left: calc(50% - 100px);
+  top: 284px;
+  gap: 10px;
+}
+
+.timer__value {
+  gap: 3px;
+}
+
+.timer__number {
+  font-size: 22px;
+  line-height: 29px;
+}
+
+.timer__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .clock__title {
   top: 28px;
   left: 10px;
@@ -910,20 +934,21 @@
   left: 10px;
   right: 10px;
   bottom: 10px;
-  padding: 9px 0;
+  padding: 11px 0;
   border-radius: 10px;
 }
 
 .second-pair__text-top {
   padding-top: 3px;
-  line-height: 12px;
+  font-size: 12px;
+  line-height: 13px;
   margin-bottom: 13px;
 }
   
 .second-pair__text-bottom {
   font-weight: 700;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 18px;
 }
 
 .gifts__text {
@@ -979,25 +1004,119 @@
 
 }
 
-/* @media (max-width: 320px) {
+@media (max-width: 320px) {
+  .promo {
     padding: 41px 0 234px;
-
-
-  .promo__list {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 340px 130px 118px 280px repeat(2, 118px) repeat(2, 130px) 280px;
-    gap: 20px;
-    margin-bottom: 534px;
-    grid-template-areas: 
-    "banner banner"
-    "book clock"
-    "sneakers sneakers"
-    "second-pair second-pair"
-    "gifts gifts"
-    "laptop laptop"
-    "dress clean"
-    "dress balls"
-    "new-year new-year";
   }
 
-} */ 
+  .promo__banner-text {
+    top: 55px;
+    left: calc(50% - 111px);
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  .timer__title {
+    top: 270px;
+    left: calc(50% - 31px);
+    font-size: 8px;
+    line-height: 10px;
+
+  }
+
+  .timer__wrapper {
+    left: calc(50% - 82.5px);
+    top: 286px;
+    gap: 8px;
+  }
+
+  .timer__value {
+    gap: 2px;
+  }
+
+  .timer__number {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  .timer__text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .book__text {
+    top: 76px;
+    max-width: 80px;
+}
+
+.book__text-top {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.book__text-bottom {
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.clock__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+.clock__discount {
+  top: 75px;
+  right: 5px;
+}
+
+.sneakers__discount {
+  top: 5px;
+  left: 5px;
+}
+.second-pair__text {
+  padding: 11px 0;
+  border-radius: 8px;
+}
+
+.second-pair__text-top {
+  font-size: 12px;
+  line-height: 13px;
+}
+  
+.second-pair__text-bottom {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.gifts__text {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.laptop__title {
+  font-size: 12px;
+  line-height: 14px;
+  }
+
+  .laptop__discount {
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .clean__title {
+    left: 9px;
+    top: 106px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .clean__discount {
+    top: 5px;
+    left: 5px;
+  }
+
+  .new-year__text {
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 6px;
+  }
+} 
