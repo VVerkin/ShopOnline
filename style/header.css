@@ -1,5 +1,5 @@
 .header {
-  padding: 24px 0 90px 0;
+  padding: 24px 0 0;
 }
 
 .header__grid {
@@ -148,7 +148,7 @@ span {
 @media (max-width: 1024px) {
 
   .header {
-    padding: 34px 0 60px 0;
+    padding: 34px 0 0;
   }
 
   .header__grid {
@@ -159,7 +159,7 @@ span {
 @media (max-width: 768px) {
 
   .header {
-    padding: 28px 0 50px 0;
+    padding: 28px 0 0;
   }
 
   .header__grid {
@@ -266,5 +266,56 @@ span {
   .header__icons-text {
     display: none;
   }
+}
+
+@media (max-width: 320px) {
+
+  .header {
+    padding: 20px 0 0;
+  }
+
+  .header__grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 25px repeat(2, 30px);
+    gap: 20px;
+  }
+
+  .header__logo {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .header__menu-btn {
+    align-items: center;
+    width: 79px;
+    height: 30px;
+    padding: 5px 15px;
+    border-radius: 4px;
+  }
+
+  .header__menu-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  
+  .header__menu-burger {
+    margin-right: 2px;
+  }
+
+  .header__search-input {
+    height: 30px;
+    padding-top: 14px;
+    padding-left: 16px;
+  
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .header__search-btn {
+    width: 50px;
+    height: 30px;
+    padding: 0px 15px;
+    border-radius: 30px;
+  } 
 }
 
