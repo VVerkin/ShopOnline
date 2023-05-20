@@ -29,24 +29,38 @@ body {
   Чтобы контент не прижимался к краям экрана
   */
 
+.container {
+  max-width: 1830px;
+  padding: 0 30px;
+  margin: 0 auto;
+  /* position: relative; */
+}
+
+@media (max-width: 1024px) {
+
   .container {
-    max-width: 1830px;
-    padding: 0 30px;
-    margin: 0 auto;
-    /* position: relative; */
-  }
-
-  @media (max-width: 1024px) {
-
-    .container {
-    padding: 0 42px;
-  }
+  padding: 0 42px;
+}
 }
 
 @media (max-width: 768px) {
 
   .container {
   padding: 0 34px;
+}
+}
+
+@media (max-width: 480px) {
+
+  .container {
+  padding: 0 28px;
+}
+}
+
+@media (max-width: 320px) {
+
+  .container {
+  padding: 0 20px;
 }
 }
 

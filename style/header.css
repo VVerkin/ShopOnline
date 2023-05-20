@@ -176,7 +176,7 @@ span {
 
   .header__menu-btn {
     
-    width: 115px;
+    max-width: 115px;
     height: 42px;
     padding: 7px 21px;
     border-radius: 6px;
@@ -235,3 +235,36 @@ span {
     line-height: 16px;
   }
 }
+
+@media (max-width: 480px) {
+
+  .header__grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 56px repeat(2, 42px);
+    gap: 20px;
+  }
+  
+  .header__search {
+    grid-column: 1/4;
+    grid-row: 3/4;
+    place-self: end;
+  }
+
+  .header__icons { 
+    grid-column: 2/4;
+    grid-row: 2/3;
+    place-self: center end;
+    gap: 20px;
+  }
+
+  .header__icons-img {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+  }
+  
+  .header__icons-text {
+    display: none;
+  }
+}
+
