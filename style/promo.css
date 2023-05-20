@@ -552,7 +552,7 @@
   }
 }
 
-@media (max-width: 988px) {
+@media (max-width: 947px) {
   .clean__title {
     top: 160px;
   }
@@ -746,9 +746,10 @@
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 720px) {
 
   .promo__list {
+    grid-template-columns: repeat(2, 1fr) fit-content(220px) 1fr;
     gap: 20px;
   }
 
@@ -766,31 +767,16 @@
     font-size: 26px;
     line-height: 29px;
   }
-}
+} 
 
-@media (max-width: 695px) {
-  .promo__list {
-    gap: 18px;
-  }
-
-  .clean__title {
-    top: 70px;
-  }
-
-  .dress__discount {
-    top: 155px;
-  }
-}
-
-@media (max-width: 672px) {
+@media (max-width: 670px) {
 
   .promo__list {
     gap: 10px;
   }
 
-
   .laptop__title {
-    top: 90px;
+    top: 80px;
     max-width: 150px;
     }
 
@@ -813,6 +799,47 @@
     }
 }
 
-/* @media (max-width: 672px) {
+@media (max-width: 590px) {
+  .promo__list {
+    gap: 5px;
+  }
 
-} */
+  .book__text {
+    top: 48px;
+    left: 5px;
+  }
+    
+  .book__text-top {
+    font-size: 19px;
+    line-height: 21px;
+  }
+  
+  .book__text-bottom {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .clean__title {
+    left: 5px;
+    top: 70px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .gifts__text {
+    left: 10px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .laptop__title {
+    left: 10px;
+    top: 75px;
+    font-size: 16px;
+    line-height: 19px;
+    }
+
+    .dress__discount {
+      top: 130px;
+    }
+}
