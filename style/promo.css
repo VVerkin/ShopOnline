@@ -1,1122 +1,1123 @@
-  .promo {
-    padding: 90px 0 189px;
-  }
+.promo {
+  padding: 90px 0 189px;
+}
+
+.promo__list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 480px repeat(4, 245px);
+  gap: 60px;
+  color: var(--white-color);
+  grid-template-areas: 
+  "banner banner banner banner banner banner"
+  "book clock second-pair second-pair gifts gifts"
+  "sneakers sneakers second-pair second-pair laptop laptop"
+  "new-year new-year new-year new-year dress clean"
+  "new-year new-year new-year new-year dress balls";
+
+}
+
+li {
+  position: relative;
+}
+
+.promo__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.promo__banner { 
+  grid-area: banner;
+}
+
+.promo__banner-text {
+  position: absolute;
+  top: 152px;
+  left: 110px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 91px;
+} 
+
+.promo__banner-timer-title {
+  position: absolute;
+  left: calc(50% - 62px);
+  top: 339px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.promo__banner-timer-wrapper {
+  display: flex;
+  position: absolute;
+  left: calc(50% - 236.5px);
+  top: 368px;
+  gap: 30px;
+}
+
+.promo__banner-timer-value {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.promo__banner-timer-value-number {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.promo__banner-timer-value-text {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.promo__book {
+  grid-area: book;
+}
+
+.promo__book-text {
+  position: absolute;
+  top: 97px;
+  left: 20px;
+}
   
-  .promo__list {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 480px repeat(4, 245px);
-    gap: 60px;
-    color: var(--white-color);
-    grid-template-areas: 
-    "banner banner banner banner banner banner"
-    "book clock second-pair second-pair gifts gifts"
-    "sneakers sneakers second-pair second-pair laptop laptop"
-    "new-year new-year new-year new-year dress clean"
-    "new-year new-year new-year new-year dress balls";
+.promo__book-text-top {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
 
-  }
+.promo__book-text-bottom {
+  font-size: 30px;
+  line-height: 39px;
+}
 
-  li {
-    position: relative;
-  }
+.promo__clock {
+  grid-area: clock;
+}
+
+.promo__clock-text {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.promo__clock-text-title {
+  position: absolute;
+  top: 78px;
+  left: 14px;
+}
+
+.promo__clock-text-discount {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.circle {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: var(--yellow-color);
+  text-align: center;
+  padding-top: 24px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.promo__second-pair {
+  grid-area: second-pair;
+}
+
+.promo__second-pair-text {
+  position: absolute;
+  max-width: 510px;
+  height: 178px;
+  left: 20px;
+  right: 20px;
+  bottom: 22px;
+  padding: 26px 23px;
+  background: var(--light-blue-color);
+  border-radius: 20px;
+}
+
+.promo__second-pair-text-top {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 6px;
+}
   
-  .promo__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-  
-  .promo__banner { 
-    grid-area: banner;
+.promo__second-pair-text-bottom {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+}
+
+.promo__gifts {
+  grid-area: gifts;
+}
+
+.promo__gifts-text {
+  position: absolute;
+  top: 104px;
+  left: 30px;
+  white-space: pre-line;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.promo__sneakers {
+  grid-area: sneakers;
+}
+
+.promo__sneakers-discount {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.promo__laptop {
+  grid-area: laptop;
+}
+
+.promo__laptop-title {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding-right: 10px;
   }
 
-  .promo__banner-text {
-    position: absolute;
-    top: 152px;
-    left: 110px;
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 91px;
-  } 
+  .promo__laptop-discount {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
 
-  .timer__title {
-    position: absolute;
-    left: calc(50% - 62px);
-    top: 339px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-  }
-  
-  .timer__wrapper {
-    display: flex;
-    position: absolute;
-    left: calc(50% - 236.5px);
-    top: 368px;
-    gap: 30px;
-  }
-  
-  .timer__value {
-    display: flex;
-    gap: 6px;
-    align-items: baseline;
-  }
-  
-  .timer__number {
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 78px;
-  }
-  
-  .timer__text {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 42px;
-  }
+.promo__new-year {
+  grid-area: new-year;
+}
 
-  .promo__book {
-    grid-area: book;
-  }
+.promo__new-year-text {
+  max-width: 643px;
+  height: 115px;
+  background-color: var(--white-color);
+  border-radius: 20px;
+  padding: 32px 41px;
+  position: absolute;
+  left: 50px;
+  top: 385px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-transform: uppercase;
 
-  .book__text {
-    position: absolute;
-    top: 97px;
-    left: 20px;
-  }
-    
-  .book__text-top {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-  }
-  
-  .book__text-bottom {
-    font-size: 30px;
-    line-height: 39px;
-  }
+  color: var(--red-color);
+}
 
-  .promo__clock {
-    grid-area: clock;
-  }
+.promo__dress {
+  grid-area: dress;
+}
 
-  .clock__text {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 39px;
-  }
-  
-  .clock__title {
-    position: absolute;
-    top: 78px;
-    left: 14px;
-  }
-  
-  .clock__discount {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-  }
+.promo__dress-discount {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
 
-  .circle {
-    width: 88px;
-    height: 88px;
-    border-radius: 50%;
-    background-color: var(--yellow-color);
-    text-align: center;
-    padding-top: 24px;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 39px;
-  }
+.promo__clean {
+  grid-area: clean;
+}
 
-  .promo__second-pair {
-    grid-area: second-pair;
-  }
+.promo__clean-title {
+  position: absolute;
+  top: 147px;
+  left: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+}
 
-  .second-pair__text {
-    position: absolute;
-    max-width: 510px;
-    height: 178px;
-    left: 20px;
-    right: 20px;
-    bottom: 22px;
-    padding: 26px 23px;
-    background: var(--light-blue-color);
-    border-radius: 20px;
-  }
-  
-  .second-pair__text-top {
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
-    margin-bottom: 6px;
-  }
-    
-  .second-pair__text-bottom {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 67px;
-  }
-
-  .promo__gifts {
-    grid-area: gifts;
-  }
-
-  .gifts__text {
-    position: absolute;
-    top: 104px;
-    left: 30px;
-    white-space: pre-line;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-  }
-
-  .promo__sneakers {
-    grid-area: sneakers;
-  }
-
-  .sneakers__discount {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-
-  .promo__laptop {
-    grid-area: laptop;
-  }
-
-  .laptop__title {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    padding-right: 10px;
-    }
-
-    .laptop__discount {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-  }
-
-  .promo__new-year {
-    grid-area: new-year;
-  }
-
-  .new-year__text {
-    max-width: 643px;
-    height: 115px;
-    background-color: var(--white-color);
-    border-radius: 20px;
-    padding: 32px 41px;
-    position: absolute;
-    left: 50px;
-    top: 385px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    text-transform: uppercase;
-
-    color: var(--red-color);
-  }
-
-  .promo__dress {
-    grid-area: dress;
-  }
-
-  .dress__discount {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-  }
-
-  .promo__clean {
-    grid-area: clean;
-  }
-
-  .clean__title {
-    position: absolute;
-    top: 147px;
-    left: 20px;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 39px;
-  }
-
-  .clean__discount {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-  }
-  .promo__balls {
-    grid-area: balls;
-  }
+.promo__clean-discount {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.promo__balls {
+  grid-area: balls;
+}
 
 @media (max-width: 1740px) {
-  .clock__text {
-    font-size: 28px;
-    line-height: 37px;
-  }
+.promo__clock-text {
+  font-size: 28px;
+  line-height: 37px;
+}
 
-  .second-pair__text {
-    bottom: 20px;
-    height: 168px;
-  }
+.promo__second-pair-text {
+  bottom: 20px;
+  height: 168px;
+}
 
-  .second-pair__text-top {
-    font-size: 36px;
-    line-height: 39px;
-    margin-bottom: 6px;
-  }
-    
-  .second-pair__text-bottom {
-    font-size: 50px;
-    line-height: 61px;
-  }
+.promo__second-pair-text-top {
+  font-size: 36px;
+  line-height: 39px;
+  margin-bottom: 6px;
+}
+  
+.promo__second-pair-text-bottom {
+  font-size: 50px;
+  line-height: 61px;
+}
 
-  .laptop__title {
-    bottom: 35px;
-    font-size: 36px;
-    line-height: 39px;
-  }
+.promo__laptop-title {
+  bottom: 35px;
+  font-size: 36px;
+  line-height: 39px;
+}
 } 
 
 @media (max-width: 1600px) {
 
-  .promo__list {
-    gap: 48px;
-  }
+.promo__list {
+  gap: 48px;
+}
 
-  .book__text-top {
-    font-size: 36px;
-    line-height: 48px;
-  }
+.promo__book-text-top {
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.promo__book-text-bottom {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.promo__clock-text {
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.promo__clock-text-discount {
+  bottom: 15px;
+}
+
+.promo__second-pair-text {
+  height: 168px;
+}
+
+.promo__second-pair-text-top {
+  font-size: 34px;
+  line-height: 37px;
+  margin-bottom: 6px;
+}
   
-  .book__text-bottom {
-    font-size: 28px;
-    line-height: 36px;
-  }
+.promo__second-pair-text-bottom {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+}
 
-  .clock__text {
-    font-size: 26px;
-    line-height: 36px;
-  }
+.promo__laptop-title {
+  bottom: 20px;
+  font-size: 32px;
+  line-height: 41px;
+  } 
 
-  .clock__discount {
-    bottom: 15px;
+  .promo__clean-title {
+  font-size: 26px;
+  line-height: 34px;
   }
-
-  .second-pair__text {
-    height: 168px;
-  }
-
-  .second-pair__text-top {
-    font-size: 34px;
-    line-height: 37px;
-    margin-bottom: 6px;
-  }
-    
-  .second-pair__text-bottom {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 59px;
-  }
-
-  .laptop__title {
-    bottom: 20px;
-    font-size: 32px;
-    line-height: 41px;
-    } 
-
-    .clean__title {
-    font-size: 26px;
-    line-height: 34px;
-    }
 }
 
 @media (max-width: 1480px) {
-  .laptop__title {
-    max-width: 200px;
-    top: 148px;
-    }
+.promo__laptop-title {
+  max-width: 200px;
+  top: 148px;
+  }
 }
 
 @media (max-width: 1374px) {
-    .clean__title {
-    font-size: 24px;
-    line-height: 26px;
-    }
+  .promo__clean-title {
+  font-size: 24px;
+  line-height: 26px;
+  }
 }
 
 @media (max-width: 1280px) {
 
-  .promo__list {
-    gap: 30px;
-  }
+.promo__list {
+  gap: 30px;
+}
 
-  .book__text-top {
-    font-size: 33px;
-    line-height: 40px;
-  }
+.promo__book-text-top {
+  font-size: 33px;
+  line-height: 40px;
+}
+
+.promo__book-text-bottom {
+  font-size: 25px;
+  line-height: 31px;
+}
+
+.promo__second-pair-text-top {
+  font-size: 34px;
+  line-height: 36px;
+  margin-bottom: 4px;
+}
   
-  .book__text-bottom {
-    font-size: 25px;
-    line-height: 31px;
-  }
+.promo__second-pair-text-bottom {
+  font-size: 42px;
+  line-height: 44px;
+}
 
-  .second-pair__text-top {
-    font-size: 34px;
-    line-height: 36px;
-    margin-bottom: 4px;
-  }
-    
-  .second-pair__text-bottom {
-    font-size: 42px;
-    line-height: 44px;
-  }
+.promo__gifts-text {
+  font-size: 36px;
+  line-height: 48px;
+}
 
-  .gifts__text {
-    font-size: 36px;
-    line-height: 48px;
-  }
-
-  .new-year__text {
-    max-width: 643px;
-    font-size: 33px;
-    line-height: 48px;
-  }
+.promo__new-year-text {
+  max-width: 643px;
+  font-size: 33px;
+  line-height: 48px;
+}
 }
 
 @media (max-width: 1024px) {
 
-  .promo {
-    padding: 60px 0 106px;
-  }
+.promo {
+  padding: 60px 0 106px;
+}
 
-  .promo__list {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 314px repeat(4, 217px) 418px;
-    gap: 24px;
-    grid-template-areas: 
-    "banner banner banner banner"
-    "book clock second-pair second-pair"
-    "sneakers sneakers second-pair second-pair"
-    "gifts gifts dress clean"
-    "laptop laptop dress balls"
-    "new-year new-year new-year new-year";
-  }
+.promo__list {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 314px repeat(4, 217px) 418px;
+  gap: 24px;
+  grid-template-areas: 
+  "banner banner banner banner"
+  "book clock second-pair second-pair"
+  "sneakers sneakers second-pair second-pair"
+  "gifts gifts dress clean"
+  "laptop laptop dress balls"
+  "new-year new-year new-year new-year";
+}
 
-  .promo__img {
-    border-radius: 16px;
-  }
+.promo__img {
+  border-radius: 16px;
+}
 
-  .promo__banner-text {
-    max-width: 401px;
-    top: 83px;
-    left: 80px;
-    font-size: 40px;
-    line-height: 52px;
-  } 
+.promo__banner-text {
+  max-width: 401px;
+  top: 83px;
+  left: 80px;
+  font-size: 40px;
+  line-height: 52px;
+} 
 
-  .timer__title {
-    position: absolute;
-    left: calc(50% - 62px);
-    top: 195px;
-  }
+.promo__banner-timer-title {
+  position: absolute;
+  left: calc(50% - 62px);
+  top: 195px;
+}
+
+.promo__banner-timer-wrapper {
+  display: flex;
+  position: absolute;
+  left: calc(50% - 153px);
+  top: 229px;
+  gap: 20px;
+}
+
+.promo__banner-timer-value {
+  gap: 5px;
+}
+
+.promo__banner-timer-value-number {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.promo__banner-timer-value-text {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.promo__book-text {
+  top: 123px;
+  left: 9px;
+}
   
-  .timer__wrapper {
-    display: flex;
-    position: absolute;
-    left: calc(50% - 153px);
-    top: 229px;
-    gap: 20px;
+.promo__book-text-top {
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.promo__book-text-bottom {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.promo__clock-text {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.promo__clock-text-title {
+  top: 58px;
+  left: 9px;
+}
+
+.promo__clock-text-discount {
+  top: 117px;
+  right: 10px;
+}
+
+.promo__second-pair-text {
+  max-width: 414px;
+  height: 146px;
+  bottom: 22px;
+  left: 22px;
+  right: 22px;
+  padding: 29px 25px;
+}
+
+.promo__second-pair-text-top {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 4px;
+}
+
+.promo__second-pair-text-bottom {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.promo__sneakers-discount {
+  top: 8px;
+  left: 10px;
+}
+
+.promo__gifts-text {
+  top: 110px;
+  left: 20px;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.promo__laptop-title {
+  max-width: 300px;
+  left: 20px;
+  top: 158px;
+  font-size: 30px;
+  line-height: 39px;
   }
+
+  .promo__laptop-discount {
+  right: 10px;
+  bottom: 10px;
+  }
+
+.promo__dress-discount {
+  top: 358px;
+  right: 10px;
+}
+
+.promo__clean-title {
+  left: 14px;
+  top: 177px;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.promo__clean-discount {
+  left: 10px;
+  top: 10px;
+}
+
+.promo__new-year-text {
+  max-width: 513px;
+  height: 83px;
   
-  .timer__value {
-    gap: 5px;
-  }
-  
-  .timer__number {
-    font-size: 40px;
-    line-height: 52px;
-  }
-  
-  .timer__text {
-    font-size: 20px;
-    line-height: 26px;
-  }
-
-  .book__text {
-    top: 123px;
-    left: 9px;
-  }
-    
-  .book__text-top {
-    font-size: 30px;
-    line-height: 39px;
-  }
-  
-  .book__text-bottom {
-    font-size: 24px;
-    line-height: 31px;
-  }
-
-  .clock__text {
-    font-size: 24px;
-    line-height: 31px;
-  }
-  
-  .clock__title {
-    top: 58px;
-    left: 9px;
-  }
-  
-  .clock__discount {
-    top: 117px;
-    right: 10px;
-  }
-
-  .second-pair__text {
-    max-width: 414px;
-    height: 146px;
-    bottom: 22px;
-    left: 22px;
-    right: 22px;
-    padding: 29px 25px;
-  }
-  
-  .second-pair__text-top {
-    font-size: 30px;
-    line-height: 36px;
-    margin-bottom: 4px;
-  }
-
-  .second-pair__text-bottom {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  .sneakers__discount {
-    top: 8px;
-    left: 10px;
-  }
-
-  .gifts__text {
-    top: 110px;
-    left: 20px;
-    font-size: 30px;
-    line-height: 39px;
-  }
-
-  .laptop__title {
-    max-width: 300px;
-    left: 20px;
-    top: 158px;
-    font-size: 30px;
-    line-height: 39px;
-    }
-
-    .laptop__discount {
-    right: 10px;
-    bottom: 10px;
-    }
-
-  .dress__discount {
-    top: 358px;
-    right: 10px;
-  }
-
-  .clean__title {
-    left: 14px;
-    top: 177px;
-    font-size: 20px;
-    line-height: 26px;
-  }
-
-  .clean__discount {
-    left: 10px;
-    top: 10px;
-  }
-
-  .new-year__text {
-    max-width: 513px;
-    height: 83px;
-    
-    border-radius: 16px;
-    padding: 24px 46px;
-    left: 30px;
-    top: 296px;
-    font-size: 30px;
-    line-height: 36px;
-  }
+  border-radius: 16px;
+  padding: 24px 46px;
+  left: 30px;
+  top: 296px;
+  font-size: 30px;
+  line-height: 36px;
+}
 }
 
 @media (max-width: 947px) {
-  .clean__title {
-    top: 160px;
-  }
+.promo__clean-title {
+  top: 160px;
+}
 }
 
 @media (max-width: 931px) {
-  .book__text {
-    top: 110px;
-    left: 9px;
-  }
+.promo__book-text {
+  top: 110px;
+  left: 9px;
+}
 
-  .second-pair__text {
-    padding: 14px 25px;
-  }
+.promo__second-pair-text {
+  padding: 14px 25px;
+}
 
-  .laptop__title {
-    top: 130px;
-    max-width: 200px;
-  }
+.promo__laptop-title {
+  top: 130px;
+  max-width: 200px;
+}
 }
 
 @media (max-width: 768px) {
 
-  .promo {
-    padding: 50px 0 580px;
-  }
+.promo {
+  padding: 50px 0 580px;
+}
 
-  .promo__list {
-    grid-template-columns: repeat(2, 1fr) 220px 1fr;
-    grid-template-rows: 280px 0px repeat(2, 140px) repeat(4, 60px) 337px;
-    gap: 20px;
-    grid-template-areas: 
-    "banner banner banner banner"
-    ". . . ."
-    "book clock second-pair second-pair"
-    "sneakers sneakers second-pair second-pair"
-    "gifts gifts second-pair second-pair"
-    "gifts gifts dress clean"
-    "laptop laptop dress clean"
-    "laptop laptop dress balls"
-    "new-year new-year new-year new-year";
-  }
+.promo__list {
+  grid-template-columns: repeat(2, 1fr) 220px 1fr;
+  grid-template-rows: 280px 0px repeat(2, 140px) repeat(4, 60px) 337px;
+  gap: 20px;
+  grid-template-areas: 
+  "banner banner banner banner"
+  ". . . ."
+  "book clock second-pair second-pair"
+  "sneakers sneakers second-pair second-pair"
+  "gifts gifts second-pair second-pair"
+  "gifts gifts dress clean"
+  "laptop laptop dress clean"
+  "laptop laptop dress balls"
+  "new-year new-year new-year new-year";
+}
 
-  .promo__banner-text {
-    top: 65px;
-    left: 80px;
-    font-size: 30px;
-    line-height: 39px;
-  } 
+.promo__banner-text {
+  top: 65px;
+  left: 80px;
+  font-size: 30px;
+  line-height: 39px;
+} 
 
-  .promo__img {
-    border-radius: 12px;
-  }
+.promo__img {
+  border-radius: 12px;
+}
 
-  .timer__title {
-    left: calc(50% - 46.5px);
-    top: 185px;
-    font-size: 12px;
-    line-height: 16px;
-  }
+.promo__banner-timer-title {
+  left: calc(50% - 46.5px);
+  top: 185px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.promo__banner-timer-wrapper {
+  left: calc(50% - 114.5px);
+  top: 215px;
+  gap: 10px;
+}
+
+.promo__banner-timer-value {
+  gap: 3px;
+}
+
+.promo__banner-timer-value-number {
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.promo__banner-timer-value-text {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.promo__book-text {
+  top: 48px;
+  left: 10px;
+}
   
-  .timer__wrapper {
-    left: calc(50% - 114.5px);
-    top: 215px;
-    gap: 10px;
-  }
+.promo__book-text-top {
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.promo__book-text-bottom {
+  font-size: 20px;
+  line-height: 21px;
+}
+
+.promo__clock-text {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.promo__clock-text-title {
+  top: 15px;
+  left: 5px;
+}
+
+.promo__clock-text-discount {
+  top: 80px;
+  right: 10px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  padding: 15px 6px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.promo__second-pair-text {
+  display: flex;
+  gap: 4px;
+  max-width: 360px;
+  height: 61px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  padding: 16px 0 16px 28px;
+  border-radius: 12px;
+}
+
+.promo__second-pair-text-top {
+  padding-top: 8px;
+  font-size: 16px;
+  line-height: 21px;
+}
   
-  .timer__value {
-    gap: 3px;
+.promo__second-pair-text-bottom {
+  font-size: 26px;
+  line-height: 29px;
+}
+
+.promo__sneakers-discount {
+  top: 10px;
+  left: 10px;
+}
+
+.promo__gifts-text {
+  top: 82px;
+  left: 20px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.promo__laptop-title {
+  left: 20px;
+  top: 101px;
+  font-size: 16px;
+  line-height: 19px;
   }
+
+.promo__laptop-discount {
+  right: 10px;
+  bottom: 10px;
+}
+
+.promo__dress-discount {
+  top: 160px;
+  right: 10px;
+}
+
+.promo__clean-discount {
+  left: 10px;
+  top: 10px;
+}
+
+.promo__clean-title {
+  top: 88px;
+  left: 14px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.promo__new-year-text {
+  max-width: 347px;
+  height: 68px;
   
-  .timer__number {
-    font-size: 30px;
-    line-height: 39px;
-  }
-  
-  .timer__text {
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  .book__text {
-    top: 48px;
-    left: 10px;
-  }
-    
-  .book__text-top {
-    font-size: 26px;
-    line-height: 29px;
-  }
-  
-  .book__text-bottom {
-    font-size: 20px;
-    line-height: 21px;
-  }
-
-  .clock__text {
-    font-size: 16px;
-    line-height: 21px;
-  }
-  
-  .clock__title {
-    top: 15px;
-    left: 5px;
-  }
-  
-  .clock__discount {
-    top: 80px;
-    right: 10px;
-  }
-
-  .circle {
-    width: 50px;
-    height: 50px;
-    padding: 15px 6px;
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  .second-pair__text {
-    display: flex;
-    gap: 4px;
-    max-width: 360px;
-    height: 61px;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    padding: 16px 0 16px 28px;
-    border-radius: 12px;
-  }
-  
-  .second-pair__text-top {
-    padding-top: 8px;
-    font-size: 16px;
-    line-height: 21px;
-  }
-    
-  .second-pair__text-bottom {
-    font-size: 26px;
-    line-height: 29px;
-  }
-
-  .sneakers__discount {
-    top: 10px;
-    left: 10px;
-  }
-
-  .gifts__text {
-    top: 82px;
-    left: 20px;
-    font-size: 16px;
-    line-height: 19px;
-  }
-
-  .laptop__title {
-    left: 20px;
-    top: 101px;
-    font-size: 16px;
-    line-height: 19px;
-    }
-
-  .laptop__discount {
-    right: 10px;
-    bottom: 10px;
-  }
-
-  .dress__discount {
-    top: 160px;
-    right: 10px;
-  }
-
-  .clean__discount {
-    left: 10px;
-    top: 10px;
-  }
-
-  .clean__title {
-    top: 88px;
-    left: 14px;
-    font-size: 16px;
-    line-height: 19px;
-  }
-
-  .new-year__text {
-    max-width: 347px;
-    height: 68px;
-    
-    border-radius: 12px;
-    padding: 22px 33px;
-    left: 26px;
-    top: 243px;
-    font-size: 20px;
-    line-height: 24px;
-  }
+  border-radius: 12px;
+  padding: 22px 33px;
+  left: 26px;
+  top: 243px;
+  font-size: 20px;
+  line-height: 24px;
+}
 }
 
 @media (max-width: 720px) {
 
-  .promo__list {
-    grid-template-columns: repeat(2, 1fr) fit-content(220px) 1fr;
-    gap: 20px;
-  }
+.promo__list {
+  grid-template-columns: repeat(2, 1fr) fit-content(220px) 1fr;
+  gap: 20px;
+}
 
-  .second-pair__text {
-    flex-direction: column;
-    padding: 6px 0 6px 14px;
-  }
+.promo__second-pair-text {
+  flex-direction: column;
+  padding: 6px 0 6px 14px;
+}
+
+.promo__second-pair-text-top {
+  margin: 0;
+  padding: 0;
+}
   
-  .second-pair__text-top {
-    margin: 0;
-    padding: 0;
-  }
-    
-  .second-pair__text-bottom {
-    font-size: 26px;
-    line-height: 29px;
-  }
+.promo__second-pair-text-bottom {
+  font-size: 26px;
+  line-height: 29px;
+}
 } 
 
 @media (max-width: 670px) {
 
-  .promo__list {
-    gap: 10px;
+.promo__list {
+  gap: 10px;
+}
+
+.promo__laptop-title {
+  top: 80px;
+  max-width: 150px;
   }
 
-  .laptop__title {
-    top: 80px;
-    max-width: 150px;
-    }
+.promo__book-text {
+  top: 30px;
+}
 
-  .book__text {
-    top: 30px;
+.promo__book-text-top {
+  font-size: 24px;
+  line-height: 27px;
+}
+  
+.promo__book-text-bottom {
+  font-size: 16px;
+  line-height: 20px;
   }
 
-  .book__text-top {
-    font-size: 24px;
-    line-height: 27px;
+  .promo__dress-discount {
+    top: 140px;
   }
-    
-  .book__text-bottom {
-    font-size: 16px;
-    line-height: 20px;
-    }
-
-    .dress__discount {
-      top: 140px;
-    }
 }
 
 @media (max-width: 590px) {
-  .promo__list {
-    gap: 5px;
-  }
+.promo__list {
+  gap: 5px;
+}
 
-  .book__text {
-    top: 48px;
-    left: 5px;
-  }
-    
-  .book__text-top {
-    font-size: 19px;
-    line-height: 21px;
-  }
+.promo__book-text {
+  top: 48px;
+  left: 5px;
+}
   
-  .book__text-bottom {
-    font-size: 16px;
-    line-height: 19px;
+.promo__book-text-top {
+  font-size: 19px;
+  line-height: 21px;
+}
+
+.promo__book-text-bottom {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.promo__clean-title {
+  left: 5px;
+  top: 70px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.promo__gifts-text {
+  left: 10px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.promo__laptop-title {
+  left: 10px;
+  top: 75px;
+  font-size: 16px;
+  line-height: 19px;
   }
 
-  .clean__title {
-    left: 5px;
-    top: 70px;
-    font-size: 14px;
-    line-height: 16px;
+  .promo__dress-discount {
+    top: 130px;
   }
-
-  .gifts__text {
-    left: 10px;
-    font-size: 16px;
-    line-height: 19px;
-  }
-
-  .laptop__title {
-    left: 10px;
-    top: 75px;
-    font-size: 16px;
-    line-height: 19px;
-    }
-
-    .dress__discount {
-      top: 130px;
-    }
 }
 
 @media (max-width: 480px) {
 
-  .promo__list {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 340px 130px 118px 280px repeat(2, 118px) repeat(2, 130px) 123px;
-    gap: 20px;
-    grid-template-areas: 
-    "banner banner"
-    "book clock"
-    "sneakers sneakers"
-    "second-pair second-pair"
-    "gifts gifts"
-    "laptop laptop"
-    "dress clean"
-    "dress balls"
-    "new-year new-year";
-  }
-
-  .promo__img {
-    border-radius: 10px;
-  }
-
-  .promo__banner-text {
-    top: 50px;
-    left: calc(50% - 130.5px);
-    font-size: 26px;
-    line-height: 29px;
-  }
-
-  .book__text {
-    top: 66px;
-    left: 10px;
+.promo__list {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 340px 130px 118px 280px repeat(2, 118px) repeat(2, 130px) 123px;
+  gap: 20px;
+  grid-template-areas: 
+  "banner banner"
+  "book clock"
+  "sneakers sneakers"
+  "second-pair second-pair"
+  "gifts gifts"
+  "laptop laptop"
+  "dress clean"
+  "dress balls"
+  "new-year new-year";
 }
 
-.timer__title {
-  top: 268px;
+.promo__img {
+  border-radius: 10px;
 }
 
-.timer__wrapper {
-  left: calc(50% - 100px);
-  top: 284px;
-  gap: 10px;
-}
-
-.timer__value {
-  gap: 3px;
-}
-
-.timer__number {
-  font-size: 22px;
+.promo__banner-text {
+  top: 50px;
+  left: calc(50% - 130.5px);
+  font-size: 26px;
   line-height: 29px;
 }
 
-.timer__text {
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.clock__title {
-  top: 28px;
+.promo__book-text {
+  top: 66px;
   left: 10px;
 }
 
-.clock__discount {
-  top: 70px;
-  right: 10px;
+.promo__banner-timer-title {
+top: 268px;
 }
 
-.sneakers__discount {
-  top: 10px;
-  left: 10px;
+.promo__banner-timer-wrapper {
+left: calc(50% - 100px);
+top: 284px;
+gap: 10px;
 }
 
-.second-pair__text {
-  flex-direction: row;
-  justify-content: center;
-  max-width: 450px;
-  height: 36px;
-  left: 10px;
-  right: 10px;
-  bottom: 10px;
-  padding: 11px 0;
-  border-radius: 10px;
+.promo__banner-timer-value {
+gap: 3px;
 }
 
-.second-pair__text-top {
-  padding-top: 3px;
-  font-size: 12px;
-  line-height: 13px;
-  margin-bottom: 13px;
-}
-  
-.second-pair__text-bottom {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 18px;
+.promo__banner-timer-value-number {
+font-size: 22px;
+line-height: 29px;
 }
 
-.gifts__text {
-  top: 88px;
-  left: 10px;
-  font-size: 16px;
-  line-height: 18px;
-  white-space: normal;
+.promo__banner-timer-value-text {
+font-size: 14px;
+line-height: 18px;
 }
 
-.laptop__title {
-  max-width: 400px;
-  top: 90px;
-  left: 10px;
-  font-size: 16px;
-  line-height: 19px;
-  }
-
-  .laptop__discount {
-  bottom: 10px;
-  right: 10px;
+.promo__clock-text-title {
+top: 28px;
+left: 10px;
 }
 
-.dress__discount {
-  top: 220px;
-  right: 10px;
+.promo__clock-text-discount {
+top: 70px;
+right: 10px;
 }
 
-.clean__title {
-  left: 10px;
-  top: 80px;
-  font-size: 16px;
-  line-height: 19px;
+.promo__sneakers-discount {
+top: 10px;
+left: 10px;
 }
 
-.clean__discount {
-  left: 10px;
-  top: 10px;
+.promo__second-pair-text {
+flex-direction: row;
+justify-content: center;
+max-width: 450px;
+height: 36px;
+left: 10px;
+right: 10px;
+bottom: 10px;
+padding: 11px 0;
+border-radius: 10px;
 }
 
-.new-year__text {
-  max-width: 450px;
-  height: 30px;
-  text-align: center;
-  border-radius: 10px;
-  padding: 7px 0px;
-  left: 15px;
-  right: 15px;
-  top: 83px;
-  font-size: 16px;
-  line-height: 18px;
+.promo__second-pair-text-top {
+padding-top: 3px;
+font-size: 12px;
+line-height: 13px;
+margin-bottom: 13px;
+}
+
+.promo__second-pair-text-bottom {
+font-weight: 700;
+font-size: 16px;
+line-height: 18px;
+}
+
+.promo__gifts-text {
+top: 88px;
+left: 10px;
+font-size: 16px;
+line-height: 18px;
+white-space: normal;
+}
+
+.promo__laptop-title {
+max-width: 400px;
+top: 90px;
+left: 10px;
+font-size: 16px;
+line-height: 19px;
+}
+
+.promo__laptop-discount {
+bottom: 10px;
+right: 10px;
+}
+
+.promo__dress-discount {
+top: 220px;
+right: 10px;
+}
+
+.promo__clean-title {
+left: 10px;
+top: 80px;
+font-size: 16px;
+line-height: 19px;
+}
+
+.promo__clean-discount {
+left: 10px;
+top: 10px;
+}
+
+.promo__new-year-text {
+max-width: 450px;
+height: 30px;
+text-align: center;
+border-radius: 10px;
+padding: 7px 0px;
+left: 15px;
+right: 15px;
+top: 83px;
+font-size: 16px;
+line-height: 18px;
 }
 
 }
 
 @media (max-width: 320px) {
-  .promo {
-    padding: 41px 0 234px;
-  }
-
-  .promo__banner-text {
-    top: 55px;
-    left: calc(50% - 111px);
-    font-size: 22px;
-    line-height: 29px;
-  }
-
-  .timer__title {
-    top: 270px;
-    left: calc(50% - 31px);
-    font-size: 8px;
-    line-height: 10px;
-
-  }
-
-  .timer__wrapper {
-    left: calc(50% - 82.5px);
-    top: 286px;
-    gap: 8px;
-  }
-
-  .timer__value {
-    gap: 2px;
-  }
-
-  .timer__number {
-    font-size: 20px;
-    line-height: 26px;
-  }
-  
-  .timer__text {
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-  .book__text {
-    top: 76px;
-    max-width: 80px;
+.promo {
+  padding: 41px 0 234px;
 }
 
-.book__text-top {
-  font-size: 16px;
-  line-height: 19px;
+.promo__banner-text {
+  top: 55px;
+  left: calc(50% - 111px);
+  font-size: 22px;
+  line-height: 29px;
 }
 
-.book__text-bottom {
-  font-size: 12px;
-  line-height: 13px;
+.promo__banner-timer-title {
+  top: 270px;
+  left: calc(50% - 31px);
+  font-size: 8px;
+  line-height: 10px;
+
 }
 
-.clock__text {
+.promo__banner-timer-wrapper {
+  left: calc(50% - 82.5px);
+  top: 286px;
+  gap: 8px;
+}
+
+.promo__banner-timer-value {
+  gap: 2px;
+}
+
+.promo__banner-timer-value-number {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.promo__banner-timer-value-text {
   font-size: 12px;
   line-height: 16px;
 }
-.clock__discount {
-  top: 75px;
+
+.promo__book-text {
+  top: 76px;
+  max-width: 80px;
+}
+
+.promo__book-text-top {
+font-size: 16px;
+line-height: 19px;
+}
+
+.promo__book-text-bottom {
+font-size: 12px;
+line-height: 13px;
+}
+
+.promo__clock-text {
+font-size: 12px;
+line-height: 16px;
+}
+.promo__clock-text-discount {
+top: 75px;
+right: 5px;
+}
+
+.promo__sneakers-discount {
+top: 5px;
+left: 5px;
+}
+.promo__second-pair-text {
+padding: 11px 0;
+border-radius: 8px;
+}
+
+.promo__second-pair-text-top {
+font-size: 12px;
+line-height: 13px;
+}
+
+.promo__second-pair-text-bottom {
+font-size: 16px;
+line-height: 18px;
+}
+
+.promo__gifts-text {
+font-size: 12px;
+line-height: 14px;
+}
+
+.promo__laptop-title {
+font-size: 12px;
+line-height: 14px;
+}
+
+.promo__laptop-discount {
+  bottom: 5px;
   right: 5px;
 }
 
-.sneakers__discount {
+.promo__clean-title {
+  left: 9px;
+  top: 106px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.promo__clean-discount {
   top: 5px;
   left: 5px;
 }
-.second-pair__text {
-  padding: 11px 0;
-  border-radius: 8px;
-}
 
-.second-pair__text-top {
-  font-size: 12px;
-  line-height: 13px;
-}
-  
-.second-pair__text-bottom {
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.gifts__text {
+.promo__new-year-text {
   font-size: 12px;
   line-height: 14px;
+  border-radius: 6px;
 }
-
-.laptop__title {
-  font-size: 12px;
-  line-height: 14px;
-  }
-
-  .laptop__discount {
-    bottom: 5px;
-    right: 5px;
-  }
-
-  .clean__title {
-    left: 9px;
-    top: 106px;
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  .clean__discount {
-    top: 5px;
-    left: 5px;
-  }
-
-  .new-year__text {
-    font-size: 12px;
-    line-height: 14px;
-    border-radius: 6px;
-  }
 } 
+
