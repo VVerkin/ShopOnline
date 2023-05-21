@@ -85,6 +85,7 @@ span {
 }
 
 .header__icons-img {
+  display: block;
   width: 36px;
   height: 36px;
   margin: 0 auto 6px;

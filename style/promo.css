@@ -1,3 +1,11 @@
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .promo {
   padding: 90px 0 189px;
 }
@@ -22,6 +30,7 @@ li {
 }
 
 .promo__img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
